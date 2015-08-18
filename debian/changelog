@@ -1,0 +1,32 @@
+ros-hydro-librms (0.0.3-0precise) precise; urgency=high
+
+  * Merge pull request #2 from jpgr87/develop
+    Use find_library to detect libmysqlclient
+  * Use find_library to detect libmysqlclient
+    Fedora packages libmysqlclient.so in the mysql subdirectory of the
+    system library directory, which means that passing -lmysqlclient
+    to the linker will result in a linking error.  This commit adds
+    logic to search for libmysqlclient.so on the current library paths
+    as well as the system-wide path /usr/lib/mysql.
+    Signed-off-by: Rich Mattes <mailto:richmattes@gmail.com>
+  * Contributors: Rich Mattes, Russell Toris
+
+ -- Russell Toris <rctoris@wpi.edu>  Tue, 18 Aug 2015 04:00:00 -0000
+
+ros-hydro-librms (0.0.2-0precise) precise; urgency=high
+
+  * fix for header installs
+  * Contributors: Russell Toris
+
+ -- Russell Toris <rctoris@wpi.edu>  Fri, 12 Dec 2014 05:00:00 -0000
+
+ros-hydro-librms (0.0.1-0precise) precise; urgency=high
+
+  * first working version of librms
+  * studies and conditions
+  * Initial commit
+  * Contributors: Russell Toris
+
+ -- Russell Toris <rctoris@wpi.edu>  Tue, 02 Dec 2014 05:00:00 -0000
+
+
